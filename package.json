@@ -2,7 +2,6 @@
   "name": "react",
   "version": "1.0.0",
   "description": "this is a react series",
-  "main": "script.js",
   "scripts": {
     "test": "jest"
   },
