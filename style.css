@@ -14,7 +14,7 @@
 
 /* Header */
 .header {
-  background-color: #ff595e;
+  background-color: #131212;
   color: white;
   padding: 1rem 2rem;
   display: flex;
@@ -26,11 +26,11 @@
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1e/Food_Network_New_Logo.png');
+  background-image: url("food.jpeg");
   background-size: cover;
   background-position: center;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 70px;
 }
 
 /* Navigation items */

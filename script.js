@@ -169,7 +169,7 @@ const Body = () => {
       <div className="search">Search</div>
       <div className="container">
         {restaurantList.map((restaurant, index) => (
-          <RestaurantData resData={restaurant} />
+          <RestaurantData key={index} resData={restaurant} />
         ))}
       </div>
     </div>
