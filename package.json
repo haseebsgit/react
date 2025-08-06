@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "this is a react series",
   "scripts": {
-    "start": "parcel index.html --no-cache --open",
+    "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "jest"
   },
@@ -22,6 +22,7 @@
     "parcel": "^2.15.4"
   },
   "dependencies": {
+    "@parcel/resolver-default": "^2.15.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
