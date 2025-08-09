@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "react",
   "version": "1.0.0",
   "description": "this is a react series",
@@ -23,6 +24,7 @@
   },
   "dependencies": {
     "@parcel/resolver-default": "^2.15.4",
+    "cors-anywhere": "^0.4.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },

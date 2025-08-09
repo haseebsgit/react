@@ -1,15 +1,21 @@
-import React from "react";
-
 const RestaurantData = ({ resData }) => {
-  const { resName, cuisines, eta, rating, imageUrl } = resData;
-  // You can add your JSX here for displaying restaurant data
+  const info = resData.info || {};
+  
   return (
     <div className="restaurant-card">
-      <img src={imageUrl} alt={resName} />
-      <h2>{resName}</h2>
-      <p>{Array.isArray(cuisines) ? cuisines.join(", ") : cuisines}</p>
-      <p>ETA: {eta}</p>
-      <p>Rating: {rating}</p>
+      <img
+        src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/${info.cloudinaryImageId}`}
+        alt={info.name}
+      />
+      <h2>{info.name}</h2>
+      <p>{info.cuisines?.join(", ")}</p>
+      <p>ETA: {info.sla?.deliveryTime} mins</p>
+      <p>Rating: {info.avgRating} ⭐</p>
+      <p>Cost for Two: {info.costForTwo}</p>
+      <p>Location: {info.areaName}</p>
+      <p>{info.totalRatingsString}</p>
+      {info.promoted && <span className="promo-badge">Promoted</span>}
+      {info.veg && <span className="veg-badge">🌱 Veg Only</span>}
     </div>
   );
 };
