@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* App container */
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Header */
+.header {
+  background-color: #131212;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-image: url("food.jpeg");
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  height: 70px;
+}
+
+/* Navigation items */
+.nav-items .nav-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-item {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+/* Body */
+.body {
+  padding: 2rem;
+}
+
+/* Search */
+.search {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  max-width: 300px;
+}
+
+/* Restaurant container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Restaurant card */
+.res-card {
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.res-card:hover {
+  transform: translateY(-5px);
+}
+
+.res-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+}
+
+.res-card h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.res-card h6 {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 0.3rem 0;
+}

@@ -1,0 +1,34 @@
+{
+  "type": "module",
+  "name": "react",
+  "version": "1.0.0",
+  "description": "this is a react series",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "haseeb",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haseebsgit/react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haseebsgit/react/issues"
+  },
+  "homepage": "https://github.com/haseebsgit/react#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "@parcel/resolver-default": "^2.15.4",
+    "cors-anywhere": "^0.4.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
